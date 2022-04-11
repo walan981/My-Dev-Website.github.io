@@ -1,0 +1,223 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+
+.menu{
+    height: 100vh;
+    width: 30vw;
+
+    min-width: 300px;
+    background-color: rgb(5, 5, 5);
+
+    position: absolute;
+    left: 0;
+
+}
+
+.menu .photo{
+    height: 120px;
+    width: 120px;
+    /* background-color: goldenrod; */
+
+    position: absolute;
+    top: 2%;
+    left: 15vw;   /* half the menu width*/
+    transform: translateX(-50%);
+    
+
+    background-image: url("foto_perfil.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center;
+
+    border-radius: 60px; /*mus be half of the height/width*/
+    border: 3px solid rgb(111, 110, 110);
+}
+
+
+.menu .name{
+    width: 100%;
+    /* background-color: goldenrod; */
+    color: #17bdef;
+    font-size: 13px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    transform: translateY(-50%);
+    left: 15vw;
+    transform: translateX(-50%);
+}
+
+.menu .icons{
+    height: 30px;
+    width: 22vw;
+    /* background-color: rgb(231, 203, 133); */
+
+    position: absolute;
+    top: 35%;
+    left: 15vw;
+    transform: translateX(-50%);
+
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 30px;
+}
+
+
+.menu .icons a>*{
+    height: 25px;
+    width: 25px;
+}
+
+.img1{
+    content: url("github-light.png");
+}
+
+.img1:hover{
+    content: url(github-blue.png);
+}
+
+.img2{
+    content: url("instagram-light.png");
+}
+
+.img2:hover{
+    content: url(instagram-blue.png);
+}
+
+
+.img3{
+    content: url("linkedin-light.png");
+}
+
+.img3:hover{
+    content: url(linkedin-blue.png);
+}
+
+
+
+
+.menu .sections{
+    height: 40vh;
+    width: 28vw;
+    /* border: 1px solid rgb(111, 110, 110); */
+
+    position: absolute;
+    top: 44%;
+    left: 16vw;
+    transform: translateX(-50%);
+
+}
+
+
+.sections > *{
+    color: #c4bfbf; /* font-color*/
+    /* font-size: 14px; */
+    margin-top: 5px; 
+    padding: 10px; 
+    display: flex; 
+    flex-direction: row; 
+    column-gap: 50px;   /* spacing between images and text on each item*/
+    align-items: center;  /* centralizes images and text on each item*/
+}
+
+.sections>*:hover{
+    color: #17bdef;
+    font-style: bold;
+}
+
+
+.img-home{
+    height: 25px;
+    width: 25px;
+    content: url("home-light.png");    
+}
+
+.home:hover .img-home{
+    content: url("home-blue.png");
+}
+
+.img-about{
+    height: 25px;
+    width: 25px;
+    content: url("me2-light.png");
+}
+
+.about:hover .img-about{
+    content: url("me2-blue.png");
+}
+
+.img-resume{
+    height: 25px;
+    width: 25px;
+    content: url("resume2-light.png");
+}
+
+.resume:hover .img-resume{
+    content: url("resume2-blue.png");
+}
+
+.img-port{
+    height: 25px;
+    width: 25px;
+    content: url("portfolio-light.png");
+}
+
+.portfolio:hover .img-port{
+    content: url("portfolio-blue.png");
+}
+
+.img-ser{
+    height: 30px;
+    width: 30px;
+    content: url("services2-light.png");
+}
+
+.services:hover .img-ser{
+    content: url("services2-blue.png");
+}
+
+
+.background{
+    height: 100vh;
+    width: 70vw;
+    background-color: crimson;
+
+    position: absolute;
+    left: 30%;
+    z-index: -10;
+
+    background-image: url("4.jpg");
+    background-size:cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+
+}
+
+
+.message{
+    color: #17bdef;
+    color: rgb(242, 242, 242);
+    padding: 0 10px;
+    border: 8px solid rgba(23, 189, 239,0.8);
+    text-shadow: #000 1px 1px 1px;
+    width: 60%;
+
+
+    font-size: 43px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    
+}
